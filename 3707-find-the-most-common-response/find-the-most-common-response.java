@@ -19,7 +19,7 @@ class Solution {
                 res=s;
             }
             else if (hm.get(s) == resval) {
-                     if (res == null || s.compareTo(res) < 0) {
+                     if ( s.compareTo(res) < 0) {
                         res = s;
                      }
             }
