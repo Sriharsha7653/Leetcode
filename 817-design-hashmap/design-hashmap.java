@@ -1,22 +1,21 @@
 class MyHashMap {
-    HashMap<Integer,Integer> hm= new HashMap<>();
+    int[] data;
+   
     public MyHashMap() {
-        
+         data= new int[1000001];
+         Arrays.fill(data,-1);
     }
     
     public void put(int key, int value) {
-      hm.put(key,value);
+        data[key]=value;
     }
     
     public int get(int key) {
-    if(hm.containsKey(key)){
-        return hm.get(key);
-    }
-    return -1;
+        return data[key];
     }
     
     public void remove(int key) {
-        hm.remove(key);
+        data[key]=-1;
     }
 }
 
